@@ -4,8 +4,10 @@ export class TwitterClient {
   id: string;
   client: any;
   constructor() {
-    this.id = "randomStringId";
-    const appOnlyClient = new TwitterApi(process.env.TWITTER_API_BEARER_TOKEN); // have passed the BEarer token in this
+    this.id = "randomStringId"; //TODO: remove this and add a uclid ID  here
+    const appOnlyClient = new TwitterApi(
+      process.env.TWITTER_API_BEARER_TOKEN as string
+    ); // have passed the Bearer token in this
     this.client = appOnlyClient;
   }
 

@@ -2,3 +2,5 @@
 /node_modules
 notesAndQuestions.txt
 .env
+ANALYTICS_TOOLS_DESIGN.md
+INTEGRATION_GUIDE.md
